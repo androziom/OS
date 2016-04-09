@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <signal.h>
 //#include <sys/types.h>
 //#include <sys/stat.h>
 //#include <fcntl.h>
@@ -81,7 +80,7 @@ int main(int argc, char** argv){
 }
 
 bool isDigit(char c){
-	if((int) c < 58 || (int) c > 47) return true;
+	if((int) c < 58 && (int) c > 47) return true;
 	else return false;
 }
 
